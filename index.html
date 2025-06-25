@@ -50,7 +50,7 @@
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script>
-    // Load single book JSON
+
     $.getJSON('google-books-book.json', function(data) {
       const book = data.volumeInfo;
       $('#single-book').html(`
@@ -63,7 +63,7 @@
       `);
     });
 
-    // Load list of books JSON
+   
     $.getJSON('google-books-search.json', function(data) {
       const books = data.items;
       let output = '<h3>Book List Example</h3>';
